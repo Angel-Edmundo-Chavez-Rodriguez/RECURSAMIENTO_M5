@@ -2,11 +2,16 @@ package com.cetis108.tercerparcial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ListView
 
-class CochesActivity : AppCompatActivity() {
+class CochesActivity(var adapter: CochesAdapter? = null) : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coches)
+
+        val coches = crearListaDeCoches()
+        adapter = CochesAdapter(this, coches)
+        findViewById<ListView>(R.id.ListViewCochesLista).adapter = adapter
     }
 
     fun crearListaDeCoches(): ArrayList<Coche>{
@@ -57,7 +62,7 @@ class CochesActivity : AppCompatActivity() {
             Coche(
                 R.drawable.hw_mario_sm,
                 "Martino Coche",
-                "Carro de martino, nada parecido al de mario... NINTENDO NO ME DEMANDES!! D:",
+                "Las demandas de nintento son peligrosas",
                 "600,000",
             true
             )
@@ -66,7 +71,7 @@ class CochesActivity : AppCompatActivity() {
             Coche(
                 R.drawable.hw_toad_sm,
                 "Hongo Carro",
-                "Si se preguntan ´porque al de mario le cambie el nombre y al de bowser no, es porque (CONFIDENCIAL)",
+                "Es un hongo con ruedas",
                 "700,000",
                 false
             )
