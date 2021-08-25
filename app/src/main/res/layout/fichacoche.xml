@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/coche_color_gris"
+    android:padding="3pt"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/fondo_coche"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageViewFichaCocheImagen"
+            android:src="@drawable/hw_bowser_sm"
+            android:layout_width="98dp"
+            android:layout_height="98dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="29sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/TextViewFichaChocheNombre"
+                android:text="Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/TextViewFichaCocheDescripcion"
+                android:text="Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/TextViewFichaCochePrecio"
+                android:text="Precio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
