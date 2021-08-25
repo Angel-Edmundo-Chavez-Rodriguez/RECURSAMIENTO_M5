@@ -1,6 +1,7 @@
 package com.cetis108.tercerparcial
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,7 +32,12 @@ class CochesAdapter(var contexto: Context, var listaDeCoches: ArrayList<Coche>):
         fichaCoche.TextViewFichaCochePrecio.text = coche.Precio!!
 
 
-        // TODO: 25/08/2021 Agregar intent para mostrar detalles de coche
+        fichaCoche.ImageViewFichaCocheImagen.setOnClickListener {
+            val intent = Intent(contexto, CochesDetalleActivity::class.java)
+            intent.putExtra("coche", coche)
+            contexto!!.startActivities(intent)
+
+        }
 
         return fichaCoche.root
     }

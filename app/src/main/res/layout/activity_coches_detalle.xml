@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_coche"
+    tools:context=".CochesDetalleActivity">
+
+    <Button
+        android:id="@+id/buttonCochesDetalleComprar"
+        android:layout_width="148dp"
+        android:layout_height="78dp"
+        android:text="Comprar"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCochesDetalleImagen"
+        android:layout_width="388dp"
+        android:layout_height="388dp"
+        app:srcCompat="@drawable/hw_bowser_sm"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textViewCochesDetalleNombre"
+        android:layout_width="211dp"
+        android:layout_height="74dp"
+        android:text="Nombre"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textViewCochesDetalleDescripcion"
+        android:layout_width="134dp"
+        android:layout_height="62dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textViewCochesDetallePrecio"
+        android:layout_width="170dp"
+        android:layout_height="66dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="555dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
